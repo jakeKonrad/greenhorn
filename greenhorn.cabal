@@ -1,0 +1,24 @@
+name:                greenhorn
+version:             0.1.0.0
+synopsis:            For programming artificial life experiments.
+-- description:
+homepage:            https://github.com/jakeKonrad/greenhorn
+license:             GNU GPLv3
+license-file:        LICENSE
+author:              Jacob Konrad
+maintainer:          jakegkonrad@gmail.com
+copyright:           2019 Jacob Konrad
+category:            AI
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Greenhorn.Evolve, Greenhorn.Stream
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/jakeKonrad/greenhorn
