@@ -9,6 +9,8 @@ data VecFunc a = VecFunc Int Int (Vector a -> Vector a)
 
 runVecFunc (VecFunc _ _ f) = f
 
+-- The cortex is a directed acyclic multigraph labelled with weights and an activation
+-- function.
 type Cortex = Damg (Vector Float, Double -> Double)
 
 fireCortex :: Cortex -> Vector Float -> Vector Float
